@@ -1,0 +1,4 @@
+v 4
+file . "./test2.vhdl" "2dee49845f5ff3800ac44895847504b14b5de4c4" "20250917104444.415":
+  entity hello_world at 2( 24) + 0 on 59;
+  architecture archname of hello_world at 12( 245) + 0 on 60;

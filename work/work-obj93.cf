@@ -1,0 +1,4 @@
+v 4
+file "/mnt/hdd/src/pld/smootest/" "test1.vhdl" "a12c68ff8408171dcea364be914cd9f55667f5af" "20250917103748.488":
+  entity hello_world at 2( 24) + 0 on 4;
+  architecture behaviour of hello_world at 12( 245) + 0 on 4;
