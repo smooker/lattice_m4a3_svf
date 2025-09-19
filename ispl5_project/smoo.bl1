@@ -1,0 +1,119 @@
+#$ TOOL ispLEVER 5.0.00.47.15.05
+#$ DATE Fri Sep 19 06:40:25 2025
+#$ MODULE smoo
+#$ PINS 6 out_3_ clk rstn out_2_ out_1_ out_0_
+#$ NODES 35 N_14 N_15 N_17 N_18 N_19 N_20 N_21 N_22 out_n0 out_i_2__n out_i_0__n \
+#  out_i_1__n out_i_3__n clk_c rstn_c outDFF_0_reg outDFF_1_reg outDFF_2_reg \
+#  outDFF_3_reg N_15_i N_14_i N_21_i N_22_i N_26 N_19_i N_20_i N_27 N_17_i N_18_i N_28 N_22_1 \
+#  N_21_1 N_20_1 N_19_1 N_18_1
+.model smoo
+.inputs clk.BLIF rstn.BLIF N_14.BLIF N_15.BLIF N_17.BLIF N_18.BLIF N_19.BLIF \
+N_20.BLIF N_21.BLIF N_22.BLIF out_n0.BLIF out_i_2__n.BLIF out_i_0__n.BLIF \
+out_i_1__n.BLIF out_i_3__n.BLIF clk_c.BLIF rstn_c.BLIF outDFF_0_reg.BLIF \
+outDFF_1_reg.BLIF outDFF_2_reg.BLIF outDFF_3_reg.BLIF N_15_i.BLIF N_14_i.BLIF \
+N_21_i.BLIF N_22_i.BLIF N_26.BLIF N_19_i.BLIF N_20_i.BLIF N_27.BLIF \
+N_17_i.BLIF N_18_i.BLIF N_28.BLIF N_22_1.BLIF N_21_1.BLIF N_20_1.BLIF \
+N_19_1.BLIF N_18_1.BLIF
+.outputs out_3_ out_2_ out_1_ out_0_ outDFF_2_reg.D outDFF_2_reg.C \
+outDFF_3_reg.D outDFF_3_reg.C outDFF_0_reg.D outDFF_0_reg.C outDFF_1_reg.D \
+outDFF_1_reg.C N_14 N_15 N_17 N_18 N_19 N_20 N_21 N_22 out_n0 out_i_2__n \
+out_i_0__n out_i_1__n out_i_3__n clk_c rstn_c N_15_i N_14_i N_21_i N_22_i N_26 \
+N_19_i N_20_i N_27 N_17_i N_18_i N_28 N_22_1 N_21_1 N_20_1 N_19_1 N_18_1
+.names N_27.BLIF outDFF_2_reg.D
+0 1
+.names N_26.BLIF outDFF_3_reg.D
+0 1
+.names N_28.BLIF outDFF_1_reg.D
+0 1
+.names N_14_i.BLIF N_14
+0 1
+.names N_15_i.BLIF N_15
+0 1
+.names outDFF_1_reg.BLIF out_n0.BLIF N_17
+11 1
+.names N_18_1.BLIF rstn_c.BLIF N_18
+11 1
+.names N_19_1.BLIF rstn_c.BLIF N_19
+11 1
+.names N_20_1.BLIF rstn_c.BLIF N_20
+11 1
+.names N_21_1.BLIF rstn_c.BLIF N_21
+11 1
+.names N_22_1.BLIF rstn_c.BLIF N_22
+11 1
+.names out_i_0__n.BLIF rstn_c.BLIF out_n0
+11 1
+.names outDFF_2_reg.BLIF out_i_2__n
+0 1
+.names outDFF_0_reg.BLIF out_i_0__n
+0 1
+.names outDFF_1_reg.BLIF out_i_1__n
+0 1
+.names outDFF_3_reg.BLIF out_i_3__n
+0 1
+.names N_14_i.BLIF outDFF_2_reg.BLIF N_15_i
+11 1
+.names outDFF_0_reg.BLIF outDFF_1_reg.BLIF N_14_i
+11 1
+.names N_21.BLIF N_21_i
+0 1
+.names N_22.BLIF N_22_i
+0 1
+.names N_21_i.BLIF N_22_i.BLIF N_26
+11 1
+.names N_19.BLIF N_19_i
+0 1
+.names N_20.BLIF N_20_i
+0 1
+.names N_19_i.BLIF N_20_i.BLIF N_27
+11 1
+.names N_17.BLIF N_17_i
+0 1
+.names N_18.BLIF N_18_i
+0 1
+.names N_17_i.BLIF N_18_i.BLIF N_28
+11 1
+.names N_15_i.BLIF out_i_3__n.BLIF N_22_1
+11 1
+.names N_15.BLIF outDFF_3_reg.BLIF N_21_1
+11 1
+.names N_14_i.BLIF out_i_2__n.BLIF N_20_1
+11 1
+.names N_14.BLIF outDFF_2_reg.BLIF N_19_1
+11 1
+.names outDFF_0_reg.BLIF out_i_1__n.BLIF N_18_1
+11 1
+.names outDFF_3_reg.BLIF out_3_
+1 1
+0 0
+.names outDFF_2_reg.BLIF out_2_
+1 1
+0 0
+.names outDFF_1_reg.BLIF out_1_
+1 1
+0 0
+.names outDFF_0_reg.BLIF out_0_
+1 1
+0 0
+.names clk_c.BLIF outDFF_2_reg.C
+1 1
+0 0
+.names clk_c.BLIF outDFF_3_reg.C
+1 1
+0 0
+.names out_n0.BLIF outDFF_0_reg.D
+1 1
+0 0
+.names clk_c.BLIF outDFF_0_reg.C
+1 1
+0 0
+.names clk_c.BLIF outDFF_1_reg.C
+1 1
+0 0
+.names clk.BLIF clk_c
+1 1
+0 0
+.names rstn.BLIF rstn_c
+1 1
+0 0
+.end

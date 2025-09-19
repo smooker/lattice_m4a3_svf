@@ -1,0 +1,16 @@
+ispLEVER Auto-Make Log File
+---------------------------
+
+Updating: Fit Design
+Start to record tcl script...
+Finished recording TCL script.
+
+Starting: 'C:\ispTOOLS5_0\ispcpld\bin\prefit.exe -inp m4a3_64_smooker.tt3 -out m4a3_64_smooker.tt4 -err automake.err -log m4a3_64_smooker.log -percent m4a3_64_smooker.tte -mod main -gui @m4a3_64_smooker.l0'
+
+Prefit Logic Optimizer (Jan 31 2005)  Fri Sep 19 06:14:32 2025
+
+C:\ispTOOLS5_0\ispcpld\bin\prefit.exe -inp m4a3_64_smooker.tt3 -out m4a3_64_smooker.tt4 -err automake.err -log m4a3_64_smooker.log -percent m4a3_64_smooker.tte -mod main -gui @m4a3_64_smooker.l0 
+<ERROR> F34000: failed to read design in m4a3_64_smooker.tt3
+C:\ispTOOLS5_0\ispcpld\bin\prefit.exe complete - Time 0 seconds
+
+Done: failed with exit code: 0002.

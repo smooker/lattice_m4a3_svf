@@ -1,0 +1,66 @@
+#$ TOOL ispLEVER 5.0.00.47.15.05
+#$ DATE Fri Sep 19 06:40:25 2025
+#$ MODULE verilog_m4a3
+#$ PINS 6 out_3_ clk rstn out_2_ out_1_ out_0_
+#$ NODES 4 outDFF_0_reg outDFF_1_reg outDFF_2_reg outDFF_3_reg
+.model smoo
+.inputs clk.BLIF rstn.BLIF outDFF_0_reg.BLIF outDFF_1_reg.BLIF \
+outDFF_2_reg.BLIF outDFF_3_reg.BLIF
+.outputs out_3_ out_2_ out_1_ out_0_ outDFF_2_reg.D outDFF_2_reg.C \
+outDFF_3_reg.D outDFF_3_reg.C outDFF_0_reg.D outDFF_0_reg.C outDFF_1_reg.D \
+outDFF_1_reg.C
+.names rstn.BLIF outDFF_0_reg.BLIF outDFF_1_reg.BLIF outDFF_2_reg.BLIF \
+outDFF_2_reg.D
+1110 1
+1-01 1
+10-1 1
+-111 0
+--00 0
+-0-0 0
+0--- 0
+.names rstn.BLIF outDFF_0_reg.BLIF outDFF_1_reg.BLIF outDFF_2_reg.BLIF \
+outDFF_3_reg.BLIF outDFF_3_reg.D
+11110 1
+1--01 1
+1-0-1 1
+10--1 1
+-1111 0
+0---- 0
+---00 0
+--0-0 0
+-0--0 0
+.names rstn.BLIF outDFF_0_reg.BLIF outDFF_1_reg.BLIF outDFF_1_reg.D
+110 1
+101 1
+-00 0
+-11 0
+0-- 0
+.names outDFF_3_reg.BLIF out_3_
+1 1
+0 0
+.names outDFF_2_reg.BLIF out_2_
+1 1
+0 0
+.names outDFF_1_reg.BLIF out_1_
+1 1
+0 0
+.names outDFF_0_reg.BLIF out_0_
+1 1
+0 0
+.names clk.BLIF outDFF_2_reg.C
+1 1
+0 0
+.names clk.BLIF outDFF_3_reg.C
+1 1
+0 0
+.names rstn.BLIF outDFF_0_reg.BLIF outDFF_0_reg.D
+10 1
+0- 0
+-1 0
+.names clk.BLIF outDFF_0_reg.C
+1 1
+0 0
+.names clk.BLIF outDFF_1_reg.C
+1 1
+0 0
+.end

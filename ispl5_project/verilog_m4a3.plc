@@ -1,0 +1,25 @@
+|--------------------------------------------|
+|- ispLEVER Fitter Report File              -|
+|- Version 5.0.00.47.15.05                       -|
+|- (c)Copyright, Lattice Semiconductor 2002 -|
+|--------------------------------------------|
+
+
+; Source file verilog_m4a3.tt4
+; FITTER-generated Placements.
+; DEVICE   mach464a
+; DATE     Fri Sep 19 06:40:26 2025
+
+
+Pin   5  clk
+Pin   27  rstn
+Pin   44  out_3_ Reg  ; S6=1  S9=1  Pair 57
+Pin   43  out_2_ Reg  ; S6=1  S9=1  Pair 63
+Pin   42  out_1_ Reg  ; S6=1  S9=1  Pair 45
+Pin   41  out_0_ Reg  ; S6=1  S9=1  Pair 47
+Node  57  RN_out_3_ Reg  ; S6=1  S9=1 
+Node  63  RN_out_2_ Reg  ; S6=1  S9=1 
+Node  45  RN_out_1_ Reg  ; S6=1  S9=1 
+Node  47  RN_out_0_ Reg  ; S6=1  S9=1 
+; Unused Pins & Nodes
+; -> None Found.

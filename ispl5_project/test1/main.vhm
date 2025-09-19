@@ -1,0 +1,126 @@
+--
+-- Written by Synplicity
+-- Tue Sep 16 08:52:16 2025
+--
+
+--
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+library synplify;
+use synplify.components.all;
+
+entity AND2 is
+port(
+  O :  out std_logic;
+  I0 :  in std_logic;
+  I1 :  in std_logic);
+end AND2;
+
+architecture beh of AND2 is
+  signal VCC : std_logic ;
+  signal GND : std_logic ;
+begin
+  VCC <= '1';
+  GND <= '0';
+  O <= I0 and I1  after 100 ps;
+end beh;
+
+--
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+library synplify;
+use synplify.components.all;
+
+entity IBUF is
+port(
+  O :  out std_logic;
+  I0 :  in std_logic);
+end IBUF;
+
+architecture beh of IBUF is
+  signal VCC : std_logic ;
+  signal GND : std_logic ;
+begin
+  O <= I0;
+  VCC <= '1';
+  GND <= '0';
+end beh;
+
+--
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+library synplify;
+use synplify.components.all;
+
+entity OBUF is
+port(
+  O :  out std_logic;
+  I0 :  in std_logic);
+end OBUF;
+
+architecture beh of OBUF is
+  signal VCC : std_logic ;
+  signal GND : std_logic ;
+begin
+  O <= I0;
+  VCC <= '1';
+  GND <= '0';
+end beh;
+
+--
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+library synplify;
+use synplify.components.all;
+
+entity main is
+port(
+  input_1 :  in std_logic;
+  input_2 :  in std_logic;
+  and_result :  out std_logic);
+end main;
+
+architecture beh of main is
+  signal INPUT_1_C : std_logic ;
+  signal INPUT_2_C : std_logic ;
+  signal AND_RESULT_C : std_logic ;
+  signal GND : std_logic ;
+  signal VCC : std_logic ;
+  component IBUF
+    port(
+      O : out std_logic;
+      I0 : in std_logic  );
+  end component;
+  component OBUF
+    port(
+      O : out std_logic;
+      I0 : in std_logic  );
+  end component;
+  component AND2
+    port(
+      O : out std_logic;
+      I0 : in std_logic;
+      I1 : in std_logic  );
+  end component;
+begin
+  II_input_1_cZ: IBUF port map (
+      O => INPUT_1_C,
+      I0 => input_1);
+  II_input_2_cZ: IBUF port map (
+      O => INPUT_2_C,
+      I0 => input_2);
+  II_and_result_cZ: OBUF port map (
+      O => and_result,
+      I0 => AND_RESULT_C);
+  II_and_resultand: AND2 port map (
+      O => AND_RESULT_C,
+      I0 => INPUT_1_C,
+      I1 => INPUT_2_C);
+  GND <= '0';
+  VCC <= '1';
+end beh;
+

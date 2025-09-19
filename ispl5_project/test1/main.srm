@@ -1,0 +1,73 @@
+f "noname"; #file 0
+f "c:\isptools5_0\synpbase\lib\vhd\std.vhd"; #file 1
+f "c:\users\smooker\cpld\test1\main.vhd"; #file 2
+f "c:\isptools5_0\synpbase\lib\vhd\std1164.vhd"; #file 3
+VNAME 'mach.IBUF.prim'; # view id 0
+VNAME 'mach.OBUF.prim'; # view id 1
+VNAME 'mach.AND2.prim'; # view id 2
+@ERMRlENORzQAwsRbH
+l;N3PRHs#bH4lR;R
+FmN;
+HbR3F8s0H"sRF"k0;R
+HQ
+j;N3HRHN#b8;R4
+RNH3sbF0s8HRM"H"b;
+R:fjjkRLVRRmmjRQ;R
+bfjj:Rk0sCsR0keCRB
+B;bjRf:VjRNCD#RDVN#tCRh
+7;MlRRNROEmwAzRHbslN;
+PHR3#Hbsl;R4
+mFR;H
+NR#3HbRN84N;
+HbR3F8s0H"sRF"k0;R
+HQ
+j;N3HRb0Fs8RHs""HM;R
+bfjj:RVLkRmmRR;Qj
+fbRjR:j0CskRk0sCBReBb;
+R:fjjNRVDR#CV#NDChRt7M;
+RNRlOqERhR7.blsH;P
+NR#3HblsHR
+4;F;Rm
+RNH3sbF0s8HRk"F0
+";HjRQ;H
+NRF3bsH08sHR"M
+";H4RQ;H
+NRF3bsH08sHR"M
+";bjRf:0jRsRkC0CskRBeB;R
+bfjj:RDVN#VCRNCD#R7th;R
+bfjj:R8NMPRRmmjRQR;Q4
+
+@ 
+ftell;
+@E@MR@6.::6(::R4jRsIF	NRlHLMRCPENHNFsDN;
+PDR3HMMCF6R.;P
+NR#3HPDE8R
+4;N3PRHP#_ER8D4N;
+P#R3$VM_lRNb"sIF	"R\B\:\ks#C##\\l	FFC\s\B7up\C\0#\04\HlNME3P8
+\""N;
+PFR3Lb#F0M8FC;R4
+@HR@(.::(c::R4jHkMb0;_4
+RNHDRFO"4uq..d4d;4"
+RNH3sbF0s8HRM"H"H;
+R.@@:cU::4U:jMRHb_k0.N;
+HFRDOuR"q;."
+RNH3sbF0s8HRM"H"F;
+R.@@:cg::4g:dMRN8C_s#0kD;H
+NRODFRq"uj
+";N3HRb0Fs8RHs"0Fk"s;
+R:fjjNRlOQERARzwblsHRbHMk40_
+=SmHkMb0__4OQ
+SjM=Hb_k04s;
+R:fjjNRlOQERARzwblsHRbHMk.0_
+=SmHkMb0__.OQ
+SjM=Hb_k0.s;
+R:fjjNRlOmERARzwblsHR8NM_#sCk
+D0SNm=Ms8_CD#k0Q
+SjM=N8C_s#0kD_
+O;sjRf:ljRNROEq.h7RHbslMRN8C_s#0kDN
+M8SNm=Ms8_CD#k0
+_OS=QjHkMb0__4OQ
+S4M=Hb_k0.;_O
+fbRjR:jV#NDChRt7hRt7b;
+R:fjjsR0keCRBeBRB
+B;

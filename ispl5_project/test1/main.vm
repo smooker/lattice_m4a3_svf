@@ -1,0 +1,98 @@
+//
+// Written by Synplify
+// Synplify 8.0.0, Build 381R.
+// Tue Sep 16 08:52:16 2025
+//
+// Source file index table:
+// Object locations will have the form <file>:<line>
+// file 0 "noname"
+// file 1 "\c:\isptools5_0\synpbase\lib\vhd\std.vhd "
+// file 2 "\c:\users\smooker\cpld\test1\main.vhd "
+// file 3 "\c:\isptools5_0\synpbase\lib\vhd\std1164.vhd "
+
+`timescale 100 ps/100 ps
+module IBUF (
+  O,
+  I0
+);
+output O ;
+input I0 ;
+wire O ;
+wire I0 ;
+wire VCC ;
+wire GND ;
+  assign #(1)  O = I0;
+  assign VCC = 1'b1;
+  assign GND = 1'b0;
+endmodule /* IBUF */
+
+module OBUF (
+  O,
+  I0
+);
+output O ;
+input I0 ;
+wire O ;
+wire I0 ;
+wire VCC ;
+wire GND ;
+  assign #(1)  O = I0;
+  assign VCC = 1'b1;
+  assign GND = 1'b0;
+endmodule /* OBUF */
+
+module AND2 (
+  O,
+  I0,
+  I1
+);
+output O ;
+input I0 ;
+input I1 ;
+wire O ;
+wire I0 ;
+wire I1 ;
+wire VCC ;
+wire GND ;
+  assign VCC = 1'b1;
+  assign GND = 1'b0;
+  assign #(1)  O = I0  & I1 ;
+endmodule /* AND2 */
+
+module main (
+  input_1,
+  input_2,
+  and_result
+);
+input input_1 ;
+input input_2 ;
+output and_result ;
+wire input_1 ;
+wire input_2 ;
+wire and_result ;
+wire input_1_c ;
+wire input_2_c ;
+wire and_result_c ;
+wire GND ;
+wire VCC ;
+  IBUF input_1_cZ (
+	.O(input_1_c),
+	.I0(input_1)
+);
+  IBUF input_2_cZ (
+	.O(input_2_c),
+	.I0(input_2)
+);
+  OBUF and_result_cZ (
+	.O(and_result),
+	.I0(and_result_c)
+);
+  AND2 and_resultand (
+	.O(and_result_c),
+	.I0(input_1_c),
+	.I1(input_2_c)
+);
+  assign GND = 1'b0;
+  assign VCC = 1'b1;
+endmodule /* main */
+

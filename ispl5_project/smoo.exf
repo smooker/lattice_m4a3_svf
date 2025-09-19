@@ -1,0 +1,48 @@
+Section Type   Array Num   Name                     Real Name          Base     Number     Increment
+// ------------------------------------------------------------------------------------------
+      Port          1      out[3:0]                      out                  3          4            -1
+End
+Section Member   Rename                   Array-Notation          Array Number     Index
+// -------------------------------------------------------------------------------------
+        Port      out_3_                      out[3]                       1            0            
+        Port      out_2_                      out[2]                       1            1            
+        Port      out_1_                      out[1]                       1            2            
+        Port      out_0_                      out[0]                       1            3            
+End
+Section Cross Reference File
+Design 'smoo' created Fri Sep 19 06:40:25 2025
+   Type              New Name                               Original Name
+// ----------------------------------------------------------------------
+   Inst              outDFF_2_                                 outDFF[2]
+   Inst              outDFF_3_                                 outDFF[3]
+   Inst              outDFF_0_                                 outDFF[0]
+   Inst              outDFF_1_                                 outDFF[1]
+   Inst                 out_0_                                    out[0]
+   Inst                 out_1_                                    out[1]
+   Inst                 out_2_                                    out[2]
+   Inst                 out_3_                                    out[3]
+   Inst               out_i_3_                                  out_i[3]
+   Inst               out_i_0_                                  out_i[0]
+   Inst               out_i_1_                                  out_i[1]
+   Inst               out_i_2_                                  out_i[2]
+   Net              out_i_2__n                                  out_i[2]
+   Net              out_i_0__n                                  out_i[0]
+   Net              out_i_1__n                                  out_i[1]
+   Net              out_i_3__n                                  out_i[3]
+   Net              out_c_0__n                                  out_c[0]
+   Net                out_0__n                                    out[0]
+   Net              out_c_1__n                                  out_c[1]
+   Net                out_1__n                                    out[1]
+   Net              out_c_2__n                                  out_c[2]
+   Net                out_2__n                                    out[2]
+   Net              out_c_3__n                                  out_c[3]
+End
+Section Type      Name
+// ----------------------------------------------------------------------
+        Input     clk
+        Input     rstn
+        Output     out_3_
+        Output     out_2_
+        Output     out_1_
+        Output     out_0_
+End

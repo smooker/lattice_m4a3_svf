@@ -1,0 +1,39 @@
+Using OEM Licensing.
+
+Starting:    C:\ISPTOOLS5_0\synpbase\bin\mbin\synplify.exe
+Version:     Synplify for Lattice 8.0B, Build 189R
+Date:        Fri Sep 19 06:40:19 2025
+Arguments:    -batch c:/users/smooker/CPLD\smoo.PRJ
+ProductType: synplify
+
+
+
+
+Running synthesis on smoo:CPLD
+
+log file: "C:\users\smooker\CPLD\smoo.log"
+
+
+Running Verilog Compiler...
+
+Verilog Compiler Completed
+
+
+Verilog Compiler: 0 errors, 0 warnings, 1 note - from log file C:\users\smooker\CPLD\smoo.log
+
+
+Total: 0 errors, 0 warnings, 1 note
+
+Running mach Mapper...
+
+mach Mapper Completed
+
+
+mach Mapper: 0 errors, 0 warnings, 2 notes - from log file C:\users\smooker\CPLD\smoo.log
+
+
+Total: 0 errors, 0 warnings, 3 notes
+
+exit status=0
+
+

@@ -1,0 +1,14 @@
+#$ TOOL ispLEVER 5.0.00.47.15.05
+#$ DATE Tue Sep 16 08:52:21 2025
+#$ MODULE m4a3_64_smooker
+#$ PINS 3 input_1:A1231231 input_2:A2 and_result:A0
+.type fr
+.i 2
+.o 1
+.ilb input_1 input_2
+.ob and_result
+.p 3
+11 1
+0- 0
+-0 0
+.end

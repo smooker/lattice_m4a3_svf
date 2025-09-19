@@ -1,0 +1,257 @@
+ispLEVER Auto-Make Log File
+---------------------------
+
+Updating: JEDEC File
+Start to record tcl script...
+Finished recording TCL script.
+
+Starting: 'C:\ispTOOLS5_0\ispcpld\bin\Synpwrap.exe -e smoo -target mach'
+
+Synplicity VHDL/Verilog HDL Synthesizer finished successfully
+
+#Program: Synplify for Lattice 8.0B
+#OS: Windows_NT
+
+$ Start of Compile
+#Fri Sep 19 06:40:19 2025
+
+Synplicity Verilog Compiler, version 3.0.0, Build 286R, built Jan 13 2005
+Copyright (C) 1994-2005, Synplicity Inc.  All Rights Reserved
+
+@I::"C:\ISPTOOLS5_0\SYNPBASE\LIB\CPLD\lattice.v"
+@I::"C:\ispTOOLS5_0\ispcpld\generic\verilog\synplify\generic.v"
+@I::"C:\users\smooker\CPLD\verilog_m4a3.h"
+@I::"C:\users\smooker\CPLD\smoo.v"
+Verilog syntax check successful!
+Selecting top level module smoo
+@N: CG364 :"C:\users\smooker\CPLD\smoo.v":1:7:1:10|Synthesizing module smoo
+
+@END
+Process took 0h:00m:00s realtime, 0h:00m:00s cputime
+###########################################################[
+Synplicity CPLD Technology Mapper, version 8.0.0, Build 381R, built Jan 19 2005
+Copyright (C) 1994-2005, Synplicity Inc.  All Rights Reserved
+@N:"c:\users\smooker\cpld\smoo.v":8:2:8:7|Found counter in view:work.smoo(verilog) inst out[3:0]
+---------------------------------------
+Resource Usage Report
+
+Simple gate primitives:
+DFF             4 uses
+IBUF            2 uses
+OBUF            4 uses
+INV             15 uses
+AND2            17 uses
+
+
+@N: FC100 |Timing Report not generated for this device, please use place and route tools for timing analysis.
+Mapper successful!
+Process took 0h:0m:0s realtime, 0h:0m:0s cputime
+###########################################################]
+
+
+Done: completed successfully.
+
+Starting: 'C:\ispTOOLS5_0\ispcpld\bin\edif2blf.exe -edf smoo.edi -out smoo.bl0 -err automake.err -log smoo.log -prj verilog_m4a3 -lib "C:/ispTOOLS5_0/ispcpld/dat/mach.edn" -net_Vcc VCC -net_GND GND -nbx -dse -tlw -cvt YES -xor'
+
+Starting EDIF2BLIF....
+readEDIF ended normally.
+
+Inspect circuit smoo
+    Number of input ports   : 2
+    Number of output ports  : 1
+    Number of bidir ports   : 0
+    Number of instances     : 43
+    Number of nets          : 45
+
+No design errors found in circuit smoo
+
+WriteBLIF ended normally.
+
+Done: completed successfully.
+
+Starting: 'C:\ispTOOLS5_0\ispcpld\bin\mblifopt.exe smoo.bl0 -collapse none -reduce none -keepwires -gui -err automake.err'
+
+BLIFOPT  Open-ABEL Optimizer 
+U.C. Berkeley, SIS Ver. 1.0, supported by Lattice Semiconductor
+ispLEVER 5.00 Copyright 1992-2005 Lattice Semiconductor. All Rights Reserved.
+Note 0000: 
+BLIFOPT complete - Time 0 seconds
+
+Done: completed successfully.
+
+Starting: 'C:\ispTOOLS5_0\ispcpld\bin\mblflink.exe "smoo.bl1" -o "verilog_m4a3.bl2" -omod "verilog_m4a3" -gui -err "automake.err"'
+
+BLIFLINK  Top-Down Design Linker
+ispLEVER 5.00 Copyright 1992-2005 Lattice Semiconductor. All Rights Reserved.
+
+Done: completed successfully.
+
+Starting: 'C:\ispTOOLS5_0\ispcpld\bin\impsrc.exe -gui -prj verilog_m4a3 -lci verilog_m4a3.lct -log verilog_m4a3.imp -err automake.err -tti verilog_m4a3.bl2 -dir c:\users\smooker\cpld'
+
+No pin assignment or valid property.
+No source constraints were imported.
+Done: completed successfully.
+
+Starting: 'C:\ispTOOLS5_0\ispcpld\bin\abelvci.exe -vci verilog_m4a3.lct -blifopt -gui verilog_m4a3.b2_'
+
+Done: completed successfully.
+
+Starting: 'C:\ispTOOLS5_0\ispcpld\bin\mblifopt.exe verilog_m4a3.bl2 -sweep -mergefb -err automake.err -o verilog_m4a3.bl3 -gui @verilog_m4a3.b2_'
+
+BLIFOPT  Open-ABEL Optimizer 
+U.C. Berkeley, SIS Ver. 1.0, supported by Lattice Semiconductor
+ispLEVER 5.00 Copyright 1992-2005 Lattice Semiconductor. All Rights Reserved.
+Note 13707: Node N_14 is collapsed...
+Note 13707: Node N_15 is collapsed...
+Note 13707: Node out_i_2__n is collapsed...
+Note 13707: Node out_i_0__n is collapsed...
+Note 13707: Node out_i_1__n is collapsed...
+Note 13707: Node out_i_3__n is collapsed...
+Note 13707: Node N_21_i is collapsed...
+Note 13707: Node N_18_i is collapsed...
+Note 13707: Node N_17_i is collapsed...
+Note 13707: Node N_22_i is collapsed...
+Note 13707: Node N_20_i is collapsed...
+Note 13707: Node N_19_i is collapsed...
+Note 13707: Node N_18_1 is collapsed...
+Note 13707: Node N_26 is collapsed...
+Note 13707: Node N_27 is collapsed...
+Note 13707: Node N_19_1 is collapsed...
+Note 13707: Node N_17 is collapsed...
+Note 13707: Node N_20 is collapsed...
+Note 13707: Node N_21 is collapsed...
+Note 13707: Node N_22 is collapsed...
+Note 13707: Node N_22_1 is collapsed...
+Note 13707: Node N_21_1 is collapsed...
+Note 13707: Node N_15_i is collapsed...
+Note 13707: Node N_20_1 is collapsed...
+Note 13707: Node clk_c is collapsed...
+Note 13707: Node rstn_c is collapsed...
+Note 13707: Node out_n0 is collapsed...
+Note 13707: Node N_19 is collapsed...
+Note 13707: Node N_14_i is collapsed...
+Note 13707: Node N_18 is collapsed...
+Note 13707: Node N_28 is collapsed...
+Control path optimization...
+Note 0000: Estimated (clusters + macrocells): 8, Fmax Logic Level: 1
+Note 0000: 
+BLIFOPT complete - Time 0 seconds
+
+Done: completed successfully.
+
+Starting: 'C:\ispTOOLS5_0\ispcpld\bin\abelvci.exe -vci verilog_m4a3.lct -dev mach4a -diofft -gui verilog_m4a3.d0'
+
+Done: completed successfully.
+
+Starting: 'C:\ispTOOLS5_0\ispcpld\bin\mdiofft.exe verilog_m4a3.bl3 -pla -family AMDMACH -idev van -o verilog_m4a3.tt2 -oxrf verilog_m4a3.xrf -err automake.err -gui @verilog_m4a3.d0'
+
+DIOFFT  Flip-Flop Transformation program
+ispLEVER 5.00 Copyright 1992-2005 Lattice Semiconductor. All Rights Reserved.
+
+
+DIOFFT complete - Time 0 seconds
+
+Done: completed successfully.
+
+Starting: 'C:\ispTOOLS5_0\ispcpld\bin\tt2tott3.exe -prj verilog_m4a3 -dir c:\users\smooker\cpld -log verilog_m4a3.log -tti verilog_m4a3.tt2 -tto verilog_m4a3.tt3'
+
+
+Done: completed successfully.
+
+Starting: 'C:\ispTOOLS5_0\ispcpld\bin\abelvci.exe -vci verilog_m4a3.lct -dev mach4a -prefit -gui verilog_m4a3.l0'
+
+Done: completed successfully.
+
+Starting: 'C:\ispTOOLS5_0\ispcpld\bin\prefit.exe -inp verilog_m4a3.tt3 -out verilog_m4a3.tt4 -err automake.err -log verilog_m4a3.log -percent verilog_m4a3.tte -mod smoo -gui @verilog_m4a3.l0'
+
+Prefit Logic Optimizer (Jan 31 2005)  Fri Sep 19 06:40:26 2025
+
+C:\ispTOOLS5_0\ispcpld\bin\prefit.exe -inp verilog_m4a3.tt3 -out verilog_m4a3.tt4 -err automake.err -log verilog_m4a3.log -percent verilog_m4a3.tte -mod smoo -gui @verilog_m4a3.l0 
+Number of pins (IO)    :     6
+Number of outputs (MC) :     4
+Number of registers    :     4
+Number of logic pterms :    10
+C:\ispTOOLS5_0\ispcpld\bin\prefit.exe complete - Time 0 seconds
+
+Done: completed successfully.
+
+Starting: 'C:\ispTOOLS5_0\ispcpld\bin\blif2eqn.exe verilog_m4a3.tte -o verilog_m4a3.eq3 -use_short -err automake.err -gui'
+
+BLIF2EQN  Open-ABEL Report Generator
+ispLEVER 5.0 Copyright(C), 1992-2005, Lattice Semiconductor Corporation. All rights reserved
+Portions Copyright(c), 1992-1999, Vantis Corporation
+Portions Copyright(C), 1993-1998, Data I/O Corporation
+Portions Copyright(C), 1997-1998, MINC Washington Corporation
+Portions Copyright(C), Alan Phillips, Lancaster University Computer Centre 1992-1998
+
+Done: completed successfully.
+
+Starting: 'C:\ispTOOLS5_0\ispcpld\bin\lci2vci.exe -lci verilog_m4a3.lct -out verilog_m4a3.vct -log verilog_m4a3.l2v'
+
+
+Done: completed successfully.
+
+Starting: 'C:\ispTOOLS5_0\ispcpld\bin\machfitr.exe @"verilog_m4a3.rsp"'
+
+|--------------------------------------------|
+|- ispLEVER Fitter Report File              -|
+|- Version 5.0.00.47.15.05                       -|
+|- (c)Copyright, Lattice Semiconductor 2002 -|
+|--------------------------------------------|
+
+
+
+*** Source file is verilog_m4a3.tt4 . Device is M4A3-64/32-7VC .
+
+<Note>  F40016:  0 pins have been reserved out of 34 .
+<Note>  F40021:  34 pins are available after reservation, 6 are required by
+                 the design.
+<Note>  F35065:  For outputs, implicit output enables will be set to VCC.
+<Note>  F35068:  Since SET/RESET DON'T CARE is turned off, any unspecified
+                 SET/RESET will be defaulted to GND.
+
+*** End of Pla2db. 
+Check preplaced pins/nodes
+Check preplaced blocks
+Check unreferenced pins/nodes
+Check clock rules
+
+List of global clocks:
+   clk:
+...... Is preplaced at a global clock pin.
+
+List of non-global clocks:
+   None.
+
+*** End of Normalization.
+
+*** End of DRC. 
+
+*** Start Partitioning
+ 
+*** Partitioning successful.
+
+
+*** Starting Place&Route
+
+*** Place&Route Successful
+...... Zero Hold Time For Input Registers? N
+*** The JEDEC file generated is verilog_m4a3.jed .
+*** Report Generator invoked.
+*** Report Generator end.
+
+// Fitting successful.
+// ERROR count 0 WARNING count 0 .
+
+Done: completed successfully.
+
+Starting: 'C:\ispTOOLS5_0\ispcpld\bin\lci2vci.exe -vci verilog_m4a3.vco -out verilog_m4a3.lco -log verilog_m4a3.v2l'
+
+
+Done: completed successfully.
+
+Starting: 'C:\ispTOOLS5_0\ispcpld\bin\synsvf.exe -exe "C:\ispTOOLS5_0\ispvmsystem/ispufw" -prj verilog_m4a3 -if verilog_m4a3.jed -j2s -log verilog_m4a3.svl -gui'
+
+Need not generate svf file according to the constraints, exit
+
+Done: completed successfully.

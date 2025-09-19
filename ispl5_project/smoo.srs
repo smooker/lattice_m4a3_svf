@@ -1,0 +1,51 @@
+#
+#
+#
+# Created by Synplify Verilog HDL Compiler version 3.0.0, Build 286R from Synplicity, Inc.
+# Copyright 1994-2004 Synplicity, Inc. , All rights reserved.
+# Synthesis Netlist written on Fri Sep 19 06:40:19 2025
+#
+#
+#OPTIONS:"|-top|smoo|-Ic:\\users\\smooker\\CPLD\\|-IC:\\ISPTOOLS5_0\\synpbase\\lib|-v2001|-autosm|-fid2|-sharing|on|-encrypt|-ui|-ram"
+#CUR:"C:\\ISPTOOLS5_0\\synpbase\\bin\\c_ver.exe":1105640064
+#CUR:"C:\\ISPTOOLS5_0\\SYNPBASE\\LIB\\CPLD\\lattice.v":1036078794
+#CUR:"C:\\ISPTOOLS5_0\\SYNPBASE\\LIB\\CPLD\\lattice.v":1036078794
+#CUR:"C:\\ispTOOLS5_0\\ispcpld\\generic\\verilog\\synplify\\generic.v":985005724
+#CUR:"C:\\ispTOOLS5_0\\ispcpld\\generic\\verilog\\synplify\\generic.v":985005724
+#CUR:"C:\\users\\smooker\\CPLD\\verilog_m4a3.h":1758262658
+#CUR:"C:\\users\\smooker\\CPLD\\verilog_m4a3.h":1758262658
+#CUR:"C:\\users\\smooker\\CPLD\\smoo.v":1758263002
+#CUR:"C:\\users\\smooker\\CPLD\\smoo.v":1758263002
+f "C:\ISPTOOLS5_0\SYNPBASE\LIB\CPLD\lattice.v"; # file 0
+af .is_verilog 1;
+f "C:\ispTOOLS5_0\ispcpld\generic\verilog\synplify\generic.v"; # file 1
+af .is_verilog 1;
+f "C:\users\smooker\CPLD\verilog_m4a3.h"; # file 2
+af .is_verilog 1;
+f "C:\users\smooker\CPLD\smoo.v"; # file 3
+af .is_verilog 1;
+@E
+@ 
+ftell;
+@E@MR@4d::4(::R4jI	FsRF#lFCRPsFHDoN;
+PHR3#sPCHoDFR
+4;N3PRHP#_CDsHF4oR;P
+NRs3FHNohl"CR#FlF"
+;
+
+@HR@4d:::4U4j:.R	ODR	OD;
+
+
+
+@HR@.d:::4U.4:.R0s#M#Rs0
+M;
+@FR@dd:::.Udj:dR0Fkrjd:9kRF0:rdj
+9;b@R@j::44::4.sR0k0CRsRkC0Csk;R
+b@:@j4::44R:.V#NDCNRVDR#CV#NDCb;
+Rd@@::4.44d:.j:.R8N8RckM_0Fkrjd:9MRkck_F0:rdjF9Rkd0r:Rj90Csk;R
+b@:@dg::cgR:6lRkGF_k0c:rdjF9Rkc0_rjd:9NRVD,#CV#NDCN,VD,#CV#NDCMRkck_F0:rdjR9
+RsRR#;0M
+@bR@Ud::U.::8(RVFVRkd0r:Rj9Frk0d9:jR0Fk_dcr:Rj9O;D	
+RNH3Ds0_HFsolMNCFR"k;0"
+
+C;

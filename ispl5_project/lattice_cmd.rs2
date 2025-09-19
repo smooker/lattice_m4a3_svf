@@ -1,0 +1,1 @@
+-src verilog_m4a3.tt4 -type PLA -devfile "C:/ispTOOLS5_0/ispcpld/dat/mach4a/mach464ace.dev" -postfit -lci verilog_m4a3.lco

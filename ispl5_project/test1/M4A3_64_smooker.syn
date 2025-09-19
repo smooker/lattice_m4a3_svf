@@ -1,0 +1,9 @@
+JDF B
+// Created by Version 5.0 
+PROJECT M4A3_64_smooker
+DESIGN m4a3_64_smooker Normal
+DEVKIT M4A3-64/32-7VC
+ENTRY Schematic/VHDL
+MODULE main.vhd
+MODSTYLE main Normal
+SYNTHESIS_TOOL Synplify

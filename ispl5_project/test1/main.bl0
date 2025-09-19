@@ -1,0 +1,17 @@
+#$ DATE Tue Sep 16 08:52:21 2025
+#$ TOOL EDIF2BLIF version IspLever 1.0 
+#$ MODULE main
+#$ PINS 3 input_1:A1231231'ke'  input_2:A2'ke'  and_result:A0'ke' 
+#$ NODES 3 input_1_c input_2_c and_result_c 
+.model main
+.inputs input_1.BLIF input_2.BLIF input_1_c.BLIF input_2_c.BLIF and_result_c.BLIF  
+.outputs and_result input_1_c input_2_c and_result_c
+.names  input_1.BLIF input_1_c
+1 1
+.names  input_2.BLIF input_2_c
+1 1
+.names  and_result_c.BLIF and_result
+1 1
+.names  input_1_c.BLIF input_2_c.BLIF and_result_c
+11 1
+.end

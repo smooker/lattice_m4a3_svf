@@ -1,0 +1,45 @@
+#
+#
+#
+# Created by Synplify VHDL Compiler version 3.0.0, Build 286R from Synplicity, Inc.
+# Copyright 1994-2004 Synplicity, Inc. , All rights reserved.
+# Synthesis Netlist written on Tue Sep 16 08:52:16 2025
+#
+#
+#OPTIONS:"|-top|main|-autosm|-fid2|-sharing|on|-encrypt|-dfltencoding|sequential|-ui|-lite|-ram|-ignore_undefined_lib|-lib|work"
+#CUR:"C:\\ISPTOOLS5_0\\synpbase\\bin\\c_vhdl.exe":1105640064
+#CUR:"C:\\ISPTOOLS5_0\\synpbase\\lib\\vhd\\location.map":1111056556
+#CUR:"C:\\ISPTOOLS5_0\\synpbase\\lib\\vhd\\std.vhd":1076546462
+#CUR:"C:\\ISPTOOLS5_0\\synpbase\\lib\\vhd\\std.vhd":1076546462
+#CUR:"C:\\users\\smooker\\CPLD\\test1\\main.vhd":1758012730
+#CUR:"C:\\users\\smooker\\CPLD\\test1\\main.vhd":1758012730
+#CUR:"C:\\ISPTOOLS5_0\\synpbase\\lib\\vhd\\std1164.vhd":927317856
+#CUR:"C:\\ISPTOOLS5_0\\synpbase\\lib\\vhd\\std1164.vhd":927317856
+f "C:\ISPTOOLS5_0\synpbase\lib\vhd\std.vhd"; # file 0
+af .is_vhdl 1;
+f "C:\users\smooker\CPLD\test1\main.vhd"; # file 1
+af .is_vhdl 1;
+f "C:\ISPTOOLS5_0\synpbase\lib\vhd\std1164.vhd"; # file 2
+af .is_vhdl 1;
+@E
+@ 
+ftell;
+@E@MR@64::6(::R4jI	FsRHlNMCRLEHNPFDsN;P
+NR#3HPDE8R
+4;N3PRHP#_ER8D4N;
+P#R3$VM_lRNb"sIF	"R\B\:\ks#C##\\l	FFC\s\B7up\C\0#\04\HlNME3P8
+\""
+;
+
+@HR@(4::(c::R4jHkMb0R_4HkMb0;_4
+RNHDRFO"4uq..d4d;4"
+@HR@U4::Uc::R4jHkMb0R_.HkMb0;_.
+RNHDRFO".uq"
+;
+
+@FR@g4::gc::R4dN_M8skC#DN0RMs8_CD#k0N;
+HFRDOuR"q;j"
+@bR@4j::44::0.RsRkC0CskRk0sCb;
+Rj@@:44::.4:RDVN#VCRNCD#RDVN#
+C;b@R@4j:.::44.4j:.MRN8NPRMs8_CD#k0MRN8C_s#0kDRbHMk40_RbHMk.0_;;
+C

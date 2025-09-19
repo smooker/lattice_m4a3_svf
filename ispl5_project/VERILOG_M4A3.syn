@@ -1,0 +1,9 @@
+JDF B
+// Created by Version 5.0 
+PROJECT VERILOG_M4A3
+DESIGN verilog_m4a3 Normal
+DEVKIT M4A3-64/32-7VC
+ENTRY Pure Verilog HDL
+MODULE smoo.v
+MODSTYLE smoo Normal
+SYNTHESIS_TOOL Synplify

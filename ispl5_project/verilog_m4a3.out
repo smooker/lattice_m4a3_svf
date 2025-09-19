@@ -1,0 +1,49 @@
+
+10 "number of signals after reading design file"
+
+"sig    sig    sig pair blk fan                       PT xor sync"
+"num   name   type  sig num out             pin node cnt  PT type"
+"---   ----   ---- ---- --- ---             --- ---- --- --- ----"
+
+ 143     out_3_  5  147   3   0              -1   -1   4   0   21
+ 144     out_2_  5  148   2   0              -1   -1   3   0   21
+ 145     out_1_  5  149   1   0              -1   -1   2   0   21
+ 146     out_0_  5  150   0   0              -1   -1   1   0   21
+ 150  RN_out_0_  3  146   0   4  0  1  2  3  -1   -1   1   0   21
+ 149  RN_out_1_  3  145   1   3     1  2  3  -1   -1   2   0   21
+ 148  RN_out_2_  3  144   2   2        2  3  -1   -1   3   0   21
+ 147  RN_out_3_  3  143   3   1           3  -1   -1   4   0   21
+ 141        clk  9       -1   0               4   -1
+ 142       rstn  1   -1  -1   4  0  1  2  3  -1   -1
+10 "number of signals after reading design file"
+
+"sig    sig    sig pair blk fan                       PT xor sync"
+"num   name   type  sig num out             pin node cnt  PT type"
+"---   ----   ---- ---- --- ---             --- ---- --- --- ----"
+
+  43     out_3_  5  141   0   0              43   -1   4   0   21
+  42     out_2_  5  142   0   0              42   -1   3   0   21
+  41     out_1_  5  143   0   0              41   -1   2   0   21
+  40     out_0_  5  144   0   0              40   -1   1   0   21
+ 141  RN_out_3_  3   43   0   1  0           43   -1   4   0   21
+ 142  RN_out_2_  3   42   0   1  0           42   -1   3   0   21
+ 143  RN_out_1_  3   41   0   1  0           41   -1   2   0   21
+ 144  RN_out_0_  3   40   0   1  0           40   -1   1   0   21
+   4        clk  9       -1   0               4   -1
+  26       rstn  1   -1  -1   1  0           26   -1
+10 "number of signals after reading design file"
+
+"sig    sig    sig pair blk fan                       PT xor sync"
+"num   name   type  sig num out             pin node cnt  PT type"
+"---   ----   ---- ---- --- ---             --- ---- --- --- ----"
+
+  43     out_3_  5  141   0   0              43   -1   4   0   21
+  42     out_2_  5  142   0   0              42   -1   3   0   21
+  41     out_1_  5  143   0   0              41   -1   2   0   21
+  40     out_0_  5  144   0   0              40   -1   1   0   21
+ 141  RN_out_3_  3   43   0   1  0           43   -1   4   0   21
+ 142  RN_out_2_  3   42   0   1  0           42   -1   3   0   21
+ 143  RN_out_1_  3   41   0   1  0           41   -1   2   0   21
+ 144  RN_out_0_  3   40   0   1  0           40   -1   1   0   21
+   4        clk  9       -1   0               4   -1
+  26       rstn  1   -1  -1   1  0           26   -1

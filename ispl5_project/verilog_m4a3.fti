@@ -1,0 +1,37 @@
+#PLAFILE verilog_m4a3.tt4
+#DATE    09/19/2025
+#DESIGN  <no design name>
+#DEVICE  mach464a
+
+DATA LOCATION RN_out_0_:A_1	// NOD {out_0_}
+DATA LOCATION RN_out_1_:A_0	// NOD {out_1_}
+DATA LOCATION RN_out_2_:A_12	// NOD {out_2_}
+DATA LOCATION RN_out_3_:A_8	// NOD {out_3_}
+DATA LOCATION clk:*_*_5	// Cin
+DATA LOCATION out_0_:A_1_41	//  IO {RN_out_0_}
+DATA LOCATION out_1_:A_0_42	//  IO {RN_out_1_}
+DATA LOCATION out_2_:A_12_43	//  IO {RN_out_2_}
+DATA LOCATION out_3_:A_8_44	//  IO {RN_out_3_}
+DATA LOCATION rstn:*_*_27	// INP
+DATA IO_DIR   clk:IN
+DATA IO_DIR   out_0_:OUT
+DATA IO_DIR   out_1_:OUT
+DATA IO_DIR   out_2_:OUT
+DATA IO_DIR   out_3_:OUT
+DATA IO_DIR   rstn:IN
+DATA GLB_CLOCK  clk
+DATA SLEW      clk:0
+DATA SLEW      rstn:0
+DATA PW_LEVEL  out_3_:0
+DATA SLEW      out_3_:0
+DATA PW_LEVEL  out_2_:0
+DATA SLEW      out_2_:0
+DATA PW_LEVEL  out_1_:0
+DATA SLEW      out_1_:0
+DATA PW_LEVEL  out_0_:0
+DATA SLEW      out_0_:0
+DATA PW_LEVEL  RN_out_3_:0
+DATA PW_LEVEL  RN_out_2_:0
+DATA PW_LEVEL  RN_out_1_:0
+DATA PW_LEVEL  RN_out_0_:0
+END

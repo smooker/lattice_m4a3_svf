@@ -1,0 +1,51 @@
+ ispLEVER 5.0.00.47.15.05 Linked Equations File
+Copyright(C), 1992-2005, Lattice Semiconductor Corp.
+All Rights Reserved.
+
+Design smoo created  Fri Sep 19 06:40:25 2025
+
+
+ P-Terms   Fan-in  Fan-out  Type  Name (attributes)
+---------  ------  -------  ----  -----------------
+   4          5        1    Pin   out_3_.D 
+   1          1        1    Pin   out_3_.C 
+   3          4        1    Pin   out_2_.D 
+   1          1        1    Pin   out_2_.C 
+   2          3        1    Pin   out_1_.D 
+   1          1        1    Pin   out_1_.C 
+   1          2        1    Pin   out_0_.D 
+   1          1        1    Pin   out_0_.C 
+=========
+  14                 P-Term Total: 14
+                       Total Pins: 6
+                      Total Nodes: 0
+            Average P-Term/Output: 2
+
+
+Equations:
+
+out_3_.D = (rstn & !out_0_.Q & out_3_.Q
+     # rstn & !out_1_.Q & out_3_.Q
+     # rstn & !out_2_.Q & out_3_.Q
+     # rstn & out_0_.Q & out_1_.Q & out_2_.Q & !out_3_.Q);
+
+out_3_.C = (clk);
+
+out_2_.D = (rstn & !out_0_.Q & out_2_.Q
+     # rstn & !out_1_.Q & out_2_.Q
+     # rstn & out_0_.Q & out_1_.Q & !out_2_.Q);
+
+out_2_.C = (clk);
+
+out_1_.D = (rstn & !out_0_.Q & out_1_.Q
+     # rstn & out_0_.Q & !out_1_.Q);
+
+out_1_.C = (clk);
+
+out_0_.D = (rstn & !out_0_.Q);
+
+out_0_.C = (clk);
+
+
+Reverse-Polarity Equations:
+

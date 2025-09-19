@@ -1,0 +1,60 @@
+Using OEM Licensing.
+
+Starting:    C:\ispTOOLS5_0\synpbase\bin\mbin\synplify.exe
+Version:     Synplify for Lattice 8.0B, Build 189R
+Date:        Fri Sep 19 06:08:47 2025
+Arguments:   
+ProductType: synplify
+
+
+
+
+Running synthesis on proj_1:rev_1
+
+log file: "C:\ispTOOLS5_0\ispcpld\bin\rev_1\main.srr"
+
+
+Running Vhdl Compiler...
+
+Vhdl Compiler Completed
+
+
+Vhdl Compiler: 0 errors, 0 warnings, 1 note - from log file C:\ispTOOLS5_0\ispcpld\bin\rev_1\main.srr
+
+
+Running MACH Mapper...
+
+MACH Mapper Completed
+
+
+MACH Mapper: 0 errors, 0 warnings, 1 note - from log file C:\ispTOOLS5_0\ispcpld\bin\rev_1\main.srr
+
+
+Total: 0 errors, 0 warnings, 2 notes
+
+Running synthesis on proj_1:rev_1
+
+log file: "C:\ispTOOLS5_0\ispcpld\bin\rev_1\main.srr"
+
+
+Running Vhdl Compiler...
+
+Vhdl Compiler Completed
+
+
+Vhdl Compiler: 0 errors, 0 warnings, 1 note - from log file C:\ispTOOLS5_0\ispcpld\bin\rev_1\main.srr
+
+
+Running MACH Mapper...
+
+MACH Mapper Completed
+
+
+MACH Mapper: 0 errors, 0 warnings, 1 note - from log file C:\ispTOOLS5_0\ispcpld\bin\rev_1\main.srr
+
+
+Total: 0 errors, 0 warnings, 2 notes
+
+exit status=0
+
+

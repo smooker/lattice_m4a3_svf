@@ -1,0 +1,377 @@
+//
+// Written by Synplify
+// Synplify 8.0.0, Build 381R.
+// Fri Sep 19 06:40:19 2025
+//
+// Source file index table:
+// Object locations will have the form <file>:<line>
+// file 0 "noname"
+// file 1 "\c:\isptools5_0\synpbase\lib\cpld\lattice.v "
+// file 2 "\c:\isptools5_0\ispcpld\generic\verilog\synplify\generic.v "
+// file 3 "\c:\users\smooker\cpld\verilog_m4a3.h "
+// file 4 "\c:\users\smooker\cpld\smoo.v "
+
+`timescale 100 ps/100 ps
+module MACH_DFF (
+  Q,
+  D,
+  CLK,
+  R,
+  S,
+  NOTIFIER
+);
+output Q ;
+input D ;
+input CLK ;
+input R ;
+input S ;
+input NOTIFIER ;
+wire Q ;
+wire D ;
+wire CLK ;
+wire R ;
+wire S ;
+wire NOTIFIER ;
+wire un0 ;
+wire un1 ;
+wire VCC ;
+wire GND ;
+  assign #(1)  un0 = ~ S;
+  assign #(1)  un1 = ~ R;
+  assign VCC = 1'b1;
+  assign GND = 1'b0;
+  reg Q_r_e_g; // dffrs
+  always @(posedge CLK or posedge un1 or posedge un0 )
+    Q_r_e_g = #1 un1 ? 1'b0 : (un0 ? 1'b1 : D );
+  assign Q = Q_r_e_g;
+endmodule /* MACH_DFF */
+
+module DFF (
+  Q,
+  D,
+  CLK
+);
+output Q ;
+input D ;
+input CLK ;
+wire Q ;
+wire D ;
+wire CLK ;
+wire VCC ;
+wire GND ;
+  MACH_DFF INS4 (
+	.Q(Q),
+	.D(D),
+	.CLK(CLK),
+	.R(VCC),
+	.S(VCC),
+	.NOTIFIER(GND)
+);
+  assign VCC = 1'b1;
+  assign GND = 1'b0;
+endmodule /* DFF */
+
+module IBUF (
+  O,
+  I0
+);
+output O ;
+input I0 ;
+wire O ;
+wire I0 ;
+wire VCC ;
+wire GND ;
+  assign #(1)  O = I0;
+  assign VCC = 1'b1;
+  assign GND = 1'b0;
+endmodule /* IBUF */
+
+module OBUF (
+  O,
+  I0
+);
+output O ;
+input I0 ;
+wire O ;
+wire I0 ;
+wire VCC ;
+wire GND ;
+  assign #(1)  O = I0;
+  assign VCC = 1'b1;
+  assign GND = 1'b0;
+endmodule /* OBUF */
+
+module INV (
+  O,
+  I0
+);
+output O ;
+input I0 ;
+wire O ;
+wire I0 ;
+wire VCC ;
+wire GND ;
+  assign #(1)  O = ~ I0;
+  assign VCC = 1'b1;
+  assign GND = 1'b0;
+endmodule /* INV */
+
+module AND2 (
+  O,
+  I0,
+  I1
+);
+output O ;
+input I0 ;
+input I1 ;
+wire O ;
+wire I0 ;
+wire I1 ;
+wire VCC ;
+wire GND ;
+  assign VCC = 1'b1;
+  assign GND = 1'b0;
+  assign #(1)  O = I0  & I1 ;
+endmodule /* AND2 */
+
+module smoo (
+  clk,
+  rstn,
+  out
+);
+input clk ;
+input rstn ;
+output [3:0] out ;
+wire clk ;
+wire rstn ;
+wire [3:0] out_i;
+wire [3:0] out_c;
+wire out_n1 ;
+wire out_n2 ;
+wire out_n3 ;
+wire N_14 ;
+wire N_15 ;
+wire N_17 ;
+wire N_18 ;
+wire N_19 ;
+wire N_20 ;
+wire N_21 ;
+wire N_22 ;
+wire out_n0 ;
+wire clk_c ;
+wire rstn_c ;
+wire N_15_i ;
+wire N_14_i ;
+wire N_21_i ;
+wire N_22_i ;
+wire N_26 ;
+wire N_19_i ;
+wire N_20_i ;
+wire N_27 ;
+wire N_17_i ;
+wire N_18_i ;
+wire N_28 ;
+wire N_22_1 ;
+wire N_21_1 ;
+wire N_20_1 ;
+wire N_19_1 ;
+wire N_18_1 ;
+wire GND ;
+wire VCC ;
+// @4:8
+  DFF \outDFF[2]  (
+	.Q(out_c[2]),
+	.D(out_n2),
+	.CLK(clk_c)
+);
+// @4:8
+  DFF \outDFF[3]  (
+	.Q(out_c[3]),
+	.D(out_n3),
+	.CLK(clk_c)
+);
+// @4:8
+  DFF \outDFF[0]  (
+	.Q(out_c[0]),
+	.D(out_n0),
+	.CLK(clk_c)
+);
+// @4:8
+  DFF \outDFF[1]  (
+	.Q(out_c[1]),
+	.D(out_n1),
+	.CLK(clk_c)
+);
+  IBUF clk_cZ (
+	.O(clk_c),
+	.I0(clk)
+);
+  IBUF rstn_cZ (
+	.O(rstn_c),
+	.I0(rstn)
+);
+  OBUF \out_cZ[0]  (
+	.O(out[0]),
+	.I0(out_c[0])
+);
+  OBUF \out_cZ[1]  (
+	.O(out[1]),
+	.I0(out_c[1])
+);
+  OBUF \out_cZ[2]  (
+	.O(out[2]),
+	.I0(out_c[2])
+);
+  OBUF \out_cZ[3]  (
+	.O(out[3]),
+	.I0(out_c[3])
+);
+  INV N_18_i_cZ (
+	.O(N_18_i),
+	.I0(N_18)
+);
+  INV out_n1_0_i (
+	.O(out_n1),
+	.I0(N_28)
+);
+  AND2 out_n3_0_a3_0_1 (
+	.O(N_22_1),
+	.I0(N_15_i),
+	.I1(out_i[3])
+);
+  AND2 out_n3_0_a3_0 (
+	.O(N_22),
+	.I0(N_22_1),
+	.I1(rstn_c)
+);
+  AND2 out_n3_0_a3_1 (
+	.O(N_21_1),
+	.I0(N_15),
+	.I1(out_c[3])
+);
+  AND2 out_n3_0_a3 (
+	.O(N_21),
+	.I0(N_21_1),
+	.I1(rstn_c)
+);
+  AND2 out_n2_0_a3_0_1 (
+	.O(N_20_1),
+	.I0(N_14_i),
+	.I1(out_i[2])
+);
+  AND2 out_n2_0_a3_0 (
+	.O(N_20),
+	.I0(N_20_1),
+	.I1(rstn_c)
+);
+  AND2 out_n2_0_a3_1 (
+	.O(N_19_1),
+	.I0(N_14),
+	.I1(out_c[2])
+);
+  AND2 out_n2_0_a3 (
+	.O(N_19),
+	.I0(N_19_1),
+	.I1(rstn_c)
+);
+  AND2 out_n1_0_a3_0_1 (
+	.O(N_18_1),
+	.I0(out_c[0]),
+	.I1(out_i[1])
+);
+  AND2 out_n1_0_a3_0 (
+	.O(N_18),
+	.I0(N_18_1),
+	.I1(rstn_c)
+);
+  INV out_n3_0_o2_i (
+	.O(N_15),
+	.I0(N_15_i)
+);
+  INV out_n2_0_o2_i (
+	.O(N_14),
+	.I0(N_14_i)
+);
+  INV N_21_i_cZ (
+	.O(N_21_i),
+	.I0(N_21)
+);
+  INV N_22_i_cZ (
+	.O(N_22_i),
+	.I0(N_22)
+);
+  INV out_n3_0_i (
+	.O(out_n3),
+	.I0(N_26)
+);
+  INV N_19_i_cZ (
+	.O(N_19_i),
+	.I0(N_19)
+);
+  INV N_20_i_cZ (
+	.O(N_20_i),
+	.I0(N_20)
+);
+  INV out_n2_0_i (
+	.O(out_n2),
+	.I0(N_27)
+);
+  INV N_17_i_cZ (
+	.O(N_17_i),
+	.I0(N_17)
+);
+  AND2 out_n1_0_a3 (
+	.O(N_17),
+	.I0(out_c[1]),
+	.I1(out_n0)
+);
+  INV \out_i_cZ[3]  (
+	.O(out_i[3]),
+	.I0(out_c[3])
+);
+  AND2 out_n0_0_a2 (
+	.O(out_n0),
+	.I0(out_i[0]),
+	.I1(rstn_c)
+);
+  AND2 out_n1_0 (
+	.O(N_28),
+	.I0(N_17_i),
+	.I1(N_18_i)
+);
+  AND2 out_n2_0 (
+	.O(N_27),
+	.I0(N_19_i),
+	.I1(N_20_i)
+);
+  AND2 out_n3_0 (
+	.O(N_26),
+	.I0(N_21_i),
+	.I1(N_22_i)
+);
+  INV \out_i_cZ[0]  (
+	.O(out_i[0]),
+	.I0(out_c[0])
+);
+  INV \out_i_cZ[1]  (
+	.O(out_i[1]),
+	.I0(out_c[1])
+);
+  AND2 out_n2_0_o2 (
+	.O(N_14_i),
+	.I0(out_c[0]),
+	.I1(out_c[1])
+);
+  INV \out_i_cZ[2]  (
+	.O(out_i[2]),
+	.I0(out_c[2])
+);
+  AND2 out_n3_0_o2 (
+	.O(N_15_i),
+	.I0(N_14_i),
+	.I1(out_c[2])
+);
+  assign GND = 1'b0;
+  assign VCC = 1'b1;
+endmodule /* smoo */
+
